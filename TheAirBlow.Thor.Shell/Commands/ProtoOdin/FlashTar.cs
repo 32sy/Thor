@@ -1,4 +1,5 @@
 using System.Formats.Tar;
+using System.Text.RegularExpressions;
 using K4os.Compression.LZ4.Streams;
 using Serilog;
 using Spectre.Console;
@@ -33,7 +34,7 @@ public class FlashTar : ICommand {
                 var dict = new Dictionary<PitEntry, TarEntry>();
                 foreach (var entry in entries) {
                     var pitEntry = data.Entries.FirstOrDefault(
-                        x => x.FileName == entry.Name);
+                        x => x.FileName == Regex.Replace(entry.Name, @"\.([^.]+)$", ""));
                     if (pitEntry != null)
                         dict.Add(pitEntry, entry);
                 }
