@@ -1,7 +1,7 @@
-![badges](https://img.shields.io/github/contributors/32sy/Thor.svg)
-![badges](https://img.shields.io/github/forks/32sy/Thor.svg)
-![badges](https://img.shields.io/github/stars/32sy/Thor.svg)
-![badges](https://img.shields.io/github/issues/32sy/Thor.svg)
+![badges](https://img.shields.io/github/contributors/Samsung-Loki/Thor.svg)
+![badges](https://img.shields.io/github/forks/Samsung-Loki/Thor.svg)
+![badges](https://img.shields.io/github/stars/Samsung-Loki/Thor.svg)
+![badges](https://img.shields.io/github/issues/Samsung-Loki/Thor.svg)
 # Thor Flash Utility
 This is a flash utility for Samsung devices, made from scratch in C#. \
 To run this, you must have .NET 7 runtime installed on your computer. \
@@ -13,7 +13,7 @@ To run this, you must have .NET 7 runtime installed on your computer. \
 3) Always try each option the platform-specific note tells you. In case of linux, try with cdc_asm disabled and enabled.
 
 ## Support me
-Please consider donating to the original developer [here](https://boosty.to/theairblow).
+Please consider donating [here](https://boosty.to/theairblow) if you would like to support me.
 
 ## List of platforms
 1) [x] Linux (USB DevFS method)
@@ -78,6 +78,10 @@ Fun fact: Official Odin for Linux works using DevFS, and people report it workin
 ## Frequently Asked Questions
 1) A fatal error occurred. The required library *something* could not be found. \
    This is a Linux Package Mixup, use [this](https://github.com/Samsung-Loki/LegacyThor/issues/5) as reference.
+
+2) What happened to original Thor (or Hreidmar) \
+   This is a rewrite of Thor written from scratch, so I could implement the native USB communication. \
+   Also, the old codebase was severely flawed in my opinion. I archived it [here](https://github.com/Samsung-Loki/LegacyThor/).
 
 ## Credits
 [TheAirBlow](https://github.com/theairblow) for Thor Flash Utility \
